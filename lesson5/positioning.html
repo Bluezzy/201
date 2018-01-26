@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Practice: Positioning</title>
+    <style>
+      .positioned {
+        background: red;
+        width: 400px;
+        position: absolute;
+        margin-left: -200px;
+        top: 20px;
+        left: 50%;
+        z-index: 2;
+        padding: 30px 15px;
+        box-sizing: border-box;
+      }
+      .fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+        background: rgba(0, 0, 0, .6);
+      }
+      .little-box {
+        width: 20px;
+        height: 20px;
+        background: #fcfc99;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="positioned">
+      <div class="little-box"></div>
+    </div>
+    <div class="fixed">
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eleifend sit amet elit sed faucibus. Praesent sed lobortis ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In lacinia eu urna vel pretium. In id mollis ligula. Maecenas id tristique eros, vel rhoncus augue. Nullam finibus est eget quam gravida ornare quis et ligula.
+    </p>
+    <p>
+      Nullam sagittis justo velit, tincidunt pretium ligula consectetur non. Cras lectus neque, volutpat in dui sit amet, rhoncus tempor velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam eget condimentum elit. Sed viverra eleifend quam in ornare. Phasellus viverra accumsan eros, a sodales orci rutrum sed. Vivamus eu iaculis turpis. Curabitur tincidunt, quam sed tempor tincidunt, ex sem iaculis tellus, quis congue ex ligula nec turpis. Nullam tellus leo, fringilla sed eros in, rutrum bibendum ex. Vivamus blandit tortor nec ipsum tempus sollicitudin. Ut tristique efficitur dui a hendrerit.
+    </p>
+    <p>
+      Sed egestas pulvinar turpis. Donec laoreet sollicitudin tristique. Ut sit amet nibh ut urna ornare porttitor. Aliquam erat volutpat. Phasellus aliquet sem eu urna pulvinar pretium. Duis placerat blandit scelerisque. Aliquam erat volutpat. Sed imperdiet diam a nunc porta rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed nec lectus commodo tellus tincidunt scelerisque in vitae urna. Phasellus tempus lobortis nisl in rutrum. Suspendisse pharetra odio est, a consequat dolor maximus vitae. Donec lacinia enim vitae dui luctus posuere. Donec tincidunt tincidunt tincidunt. Maecenas magna urna, egestas interdum lobortis eget, fermentum nec elit.
+    </p>
+  </body>
+
+</html>
