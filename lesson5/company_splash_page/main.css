@@ -4,19 +4,19 @@
 }
 body {
   background: url("bg_body.gif") repeat;
-  margin: 0 calc(100% /6);
+  margin: 0 calc(100% /5);
   min-width: 500px;
 }
 
 /* Header */
 .header {
-  margin: 10% auto;
+  margin: 11% auto 9% auto;
   text-align: center;
 }
 
 /* Main */
 .container {
-  margin: calc(100% / 12) 0;
+  margin: calc(100% / 14) 0;
   margin-bottom: 5%;
   overflow: auto;
 }
@@ -29,7 +29,8 @@ main {
 
 /* Article */
 article {
-  padding-top: 4%;
+  padding-top: 8%;
+  padding-bottom: 5%;
 }
 article h2 {
   text-align: center;
@@ -39,20 +40,19 @@ article h2 {
 }
 article p {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 21px;
+  font-size: 20px;
   text-align: center;
   margin: 0 10%;
 }
 article h3 {
   text-align: center;
   font-size: 24px;
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   color: #3e98b2;
 }
 article:last-child {
-  padding-bottom: 5%;
+  padding-bottom: 12%;
 }
-
 /* Footer */
 footer {
   background: #e7e7e7;
