@@ -1,0 +1,47 @@
+/* General Rules */
+* {
+  box-sizing: border-box;
+}
+body {
+  background: url("bg_body.gif") repeat;
+  margin: 0 calc(100% /12);
+}
+
+/* Header */
+.header {
+  margin: 10% auto;
+  text-align: center;
+}
+
+/* Main */
+section {
+  margin: calc(100% / 14.6) 0;
+  height: 60%;
+}
+section main {
+  background: white;
+  display: block;
+  width: 100%;
+  height: 85%;
+}
+
+/* Footer */
+section footer {
+  background: #e7e7e7;
+  width: 100%;
+  height: 100px;
+  max-height:;
+}
+section footer ul {
+  position: relative;
+  top: 25%;
+  width: 80%;
+  list-style: none;
+  text-align: center;
+  margin: 0 10%;
+  padding: 0;
+}
+section footer ul li {
+  display: inline-block;
+  width: calc(80% / 3);
+}
