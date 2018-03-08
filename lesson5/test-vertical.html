@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Vertical align blocks within blocks</title>
+    <meta charset="utf-8">
+    <style>
+      body {
+        height: 1200px;
+        box-sizing: border-box;
+      }
+      .container {
+        position: relative;
+        background: green;
+        width: 60%;
+        height: 50%;
+        text-align: center;
+        margin: auto;
+      }
+      .text-box {
+        background: yellow;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        line-height: 200px;
+      }
+      .text-box span {
+        position: relative;
+        line-height: normal;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-box"><span>I want it to be centered. A very long text will still be centered. A very long text should still be centered. No matter how long it is.</span></div>
+    </div>
+  </body>
+</html>
