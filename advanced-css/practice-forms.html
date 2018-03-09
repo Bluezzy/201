@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Practice with Forms</title>
+    <meta charset="UTF-8">
+    <style>
+      fieldset {
+        display: inline-block;
+        width: 25%;
+        min-width: 175px;
+        max-width: 300px;
+      }
+      div {
+        position: relative;
+        margin: 10px auto;
+      }
+      label {
+        display: inline-block;
+        min-width: 90px;
+        margin-right: 10px;
+        text-align: right;
+      }
+      input {
+        display: inline-block;
+      }
+      input[type="submit"] {
+        margin: 10px 0;
+      }
+      .filter label {
+        text-align: left;
+      }
+      .filter input {
+        position: absolute;
+        right: 0px;
+      }
+      dl {
+        text-align: left;
+        margin: 0;
+      }
+      dt label {
+        margin: 0;
+        text-align: left;
+      }
+      dd {
+        margin: 0;
+      }
+      select {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <form action="#" method="post">
+      <fieldset class="contact-form">
+        <div>
+          <label for="first_name">First Name :</label>
+          <input type="text" name="first_name" id="first_name">
+        </div>
+        <div>
+          <label for="last_name">Last Name :</label>
+          <input type="text" name="last_name" id="last_name">
+        </div>
+        <div>
+          <label for="email">E-mail :</label>
+          <input type="email" name="email" id="email" placeholder="example@gmail.com" autocorrect="off" autocapitalize="none">
+        </div>
+        <div>
+          <label for="phone">Phone :</label>
+          <input type="tel" name="phone" id="phone">
+        </div>
+        <div>
+          <label for="phone_type">Phone Type :</label>
+          <select name="phone_type" id="phone_type">
+            <option value="home" selected>Home</option>
+            <option value="business">Business</option>
+            <option value="mobile">Mobile</option>
+          </select>
+        </div>
+        <input type="submit" value="send">
+      </fieldset>
+    </form>
+
+    <form action="#" method="get">
+      <fieldset>
+
+        <h1>Category</h1>
+
+        <div class="filter">
+          <label>Core</label>
+          <input type="radio" name="category" value="core">
+        </div>
+        <div class="filter">
+          <label>Plugins and Libraries</label>
+          <input type="radio" name="category" value="plugins_and_libraries">
+        </div>
+        <div class="filter">
+          <label>Conventions</label>
+          <input type="radio" name="category" value="conventions">
+        </div>
+        <div class="filter">
+          <label>Reviews</label>
+          <input type="radio" name="category" value="reviews">
+        </div>
+        <div class="filter">
+          <label>Opinion</label>
+          <input type="radio" name="category" value="opinion">
+        </div>
+        <div class="filter">
+          <label>People</label>
+          <input type="radio" name="category" value="people">
+        </div>
+
+        <h1>Tag</h1>
+
+        <div class="filter">
+          <label>HTML</label>
+          <input type="checkbox" name="html">
+        </div>
+        <div class="filter">
+          <label>CSS</label>
+          <input type="checkbox" name="css">
+        </div>
+        <div class="filter">
+          <label>Javascript</label>
+          <input type="checkbox" name="javascript">
+        </div>
+        <div class="filter">
+          <label>Ruby</label>
+          <input type="checkbox" name="rubyl">
+        </div>
+        <div class="filter">
+          <label>Rails</label>
+          <input type="checkbox" name="rails">
+        </div>
+        <div class="filter">
+          <label>Python</label>
+          <input type="checkbox" name="python">
+        </div>
+        <div class="filter">
+          <label>Django</label>
+          <input type="checkbox" name="django">
+        </div>
+        <input type="submit" value="filter">
+
+      </fieldset>
+    </form>
+
+    <form>
+      <fieldset>
+        <dl>
+          <dt>
+            <label>Category</label>
+          </dt>
+          <dd>
+            <select name="category">
+              <option value="core">Core</option>
+              <option value="plugins_and_libraries">Plugins and Libraries</option>
+              <option value="conventions">Conventions</option>
+              <option value="reviews">Reviews</option>
+              <option value="opinion">Opinion</option>
+              <option value="people">People</option>
+            </select>
+          </dd>
+          <dt>
+            <label>Tag</label>
+          </dt>
+          <dd>
+            <select name="tag" size="7" multiple>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="javascript">Javascript</option>
+              <option value="ruby">Ruby</option>
+              <option value="rails">Rails</option>
+              <option value="python">Python</option>
+              <option value="django">Django</option>
+            </select>
+          </dd>
+        </dl>
+        <input type="submit" value="filter">
+        <input type="reset">
+      </fieldset>
+    </form>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
