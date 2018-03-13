@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+form {
+  width: 600px;
+}
+
+fieldset {
+  background: #ececec;
+  border: none;
+  border-left: 4px solid #cdcccc;
+  padding: 15px 40px 30px 30px;
+  margin-bottom: 2px;
+}
+
+h1 {
+  display: inline-block;
+  font: normal 28px Helvetica, Arial, sans-serif;
+  margin: 25px auto;
+}
+
+h2 {
+  font: bold 20px Helvetica, Arial, sans-serif;
+  text-align: left;
+}
+
+label {
+  font: bold 16px Helvetica, Arial, sans-serif;
+  color: #666766;
+}
+
+input[type="text"],
+input[type="email"] {
+  font: normal 14px Helvetica, Arial, sans-serif;
+  border: 1px solid blue;
+  border-radius: 5px;
+  padding: 10px 4px;
+}
+
+input[type="email"] {
+  width: 100%;
+}
+
+dt {
+  margin-bottom: 12px;
+}
+
+dd {
+  margin: 0;
+}
+
+dl {
+  margin: 25px 0;
+}
+
+.personal_info input[type="text"] {
+  width: 49%;
+}
+
+.personal_info input[type="text"] + input[type="text"] {
+  margin-left: 2%;
+}
