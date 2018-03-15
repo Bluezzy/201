@@ -1,32 +1,101 @@
 <!doctype html>
 <html lang="en-US">
   <head>
+    <title>Advanced Form Layout</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Create Your Profile</h1>
-    <form action="" method="post">
-      <fieldset class="personal_info">
-        <h2>Personal Info</h2>
-        <dl>
-          <dt>
-            <label>Your Name</label>
-          </dt>
-          <dd>
-            <input type="text" name="first_name" placeholder="First"><!--
-            --><input type="text" name="last_name" placeholder="Last">
-          </dd>
-        </dl>
-        <dl>
-          <dt>
-            <label for="email">Email</label>
-          </dt>
-          <dd>
-            <input type="email" name="email" id="email">
-          </dd>
-        </dl>
-      </fieldset>
-    </form>
+    <div class="container">
+      <h1>Create Your Profile</h1>
+      <form action="#" method="post">
+        <fieldset class="personal_info">
+          <h2>Personal Info</h2>
+          <dl>
+            <dt>
+              <label>Your Name</label>
+            </dt>
+            <dd>
+              <input type="text" name="first_name" placeholder="First"><!--
+              --><input type="text" name="last_name" placeholder="Last">
+            </dd>
+          </dl>
+          <dl>
+            <dt>
+              <label for="email">Email</label>
+            </dt>
+            <dd>
+              <input type="email" name="email" id="email">
+            </dd>
+          </dl>
+        </fieldset>
+        <fieldset class="media">
+          <h2>Social Media Account</h2>
+          <dl>
+            <dt>
+              <label for="facebook">Facebook</label>
+            </dt>
+            <dd>
+              <input type="text" name="facebook" id="facebook">
+            </dd>
+          </dl><!--
+          --><dl>
+            <dt>
+              <label for="twitter">Twitter</label>
+            </dt>
+            <dd>
+              <input type="text" name="twitter" id="twitter">
+            </dd>
+          </dl><!--
+          --><dl>
+            <dt>
+              <label for="linkedin">Linkedin</label>
+            </dt>
+            <dd>
+              <input type="text" name="linkedin" id="linkedin">
+            </dd>
+          </dl>
+        </fieldset>
+        <fieldset class="account">
+          <h2>Account Info</h2>
+          <dl>
+            <dt>
+              <label for="profile_name">Profile Name</label>
+            </dt>
+            <dd>
+              <input type="text" name="profile_name" id="profile_name">
+            </dd>
+          </dl>
+          <dl>
+            <dt>
+              <label for="password">Password</label>
+            </dt>
+            <dd>
+              <input type="text" name="password" id="password">
+            </dd>
+          </dl><!--
+          --><dl>
+            <dt>
+              <label for="confirm_password">Confirm Password</label>
+            </dt>
+            <dd>
+              <input type="text" name="confirm_password" id="confirm_password">
+            </dd>
+          </dl>
+        </fieldset>
+        <fieldset class="bio">
+          <h2>Bio</h2>
+          <textarea cols="100" rows="6" name="bio"></textarea>
+        </fieldset>
+        <fieldset class="agreement">
+          <label class="checkbox">
+            <input type="checkbox">
+            <span class="agree">I agree to treat other users with respect, and will not say anything at all if I have nothing nice to say.</span>
+          </label>
+          <input type="submit" value="Create Account">
+        </fieldset>
+      </form>
+    </div>
   </body>
 </html>
+

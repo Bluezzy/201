@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
 form {
   width: 600px;
 }
@@ -17,7 +22,7 @@ fieldset {
 h1 {
   display: inline-block;
   font: normal 28px Helvetica, Arial, sans-serif;
-  margin: 25px auto;
+  margin: 0 auto 20px auto;
 }
 
 h2 {
@@ -31,15 +36,22 @@ label {
 }
 
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+textarea {
   font: normal 14px Helvetica, Arial, sans-serif;
   border: 1px solid blue;
   border-radius: 5px;
-  padding: 10px 4px;
+  padding: 12px 4px;
 }
 
-input[type="email"] {
+input[type="email"],
+textarea {
   width: 100%;
+}
+
+textarea {
+  max-width: 100%;
+  min-width: 100%;
 }
 
 dt {
@@ -61,3 +73,66 @@ dl {
 .personal_info input[type="text"] + input[type="text"] {
   margin-left: 2%;
 }
+
+.media dl {
+  display: inline-block;
+  width: 30%;
+  margin-right: 5%;
+}
+
+.media dl:nth-of-type(3) {
+  margin-right: 0;
+}
+
+.account dl:nth-of-type(2),
+.account dl:nth-of-type(3) {
+  display: inline-block;
+  margin-top: 0;
+  width: 48%;
+}
+
+.account dl:nth-of-type(2) {
+  margin-right: 4%;
+}
+
+.account input {
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+}
+
+label.checkbox {
+  display: block;
+  font: normal 12px Helvetica; 
+  margin-bottom: 25px;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  margin: 0 15px 0 0;
+  vertical-align: top;
+}
+
+.agree {
+  display: inline-block;
+  width: 70%;
+}
+
+input[type="submit"] {
+  -webkit-appearance: none;
+  font: normal 16px Helvetica, Arial, sans-serif;
+  padding: 16px 24px 12px 24px;
+  background-color: #0066cc;
+  color: white;
+  border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+  background-color: dodgerblue;
+}
+
+
+
+
