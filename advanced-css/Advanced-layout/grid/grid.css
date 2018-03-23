@@ -7,33 +7,43 @@ html {
   padding: 0;
 }
 
+body {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "aside1 article1 aside2"
+    "aside3 article2 article2"
+    "footer footer footer";
+}
+
 header, h1 {
   background-color: blue;
   color: white;
 }
 
 header {
+  grid-area: header;
   padding: 1rem;
   text-align: center;
 }
 
 nav {
+  grid-area: nav;
   background-color: cyan;
 }
 
-main {
-  display: flex;
-}
-
 ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   list-style-type: none;
-  display: flex;
-  justify-content: space-around;
 }
 
 li {
   text-align: center;
-  width: 20%;
+  width: auto;
 }
 
 a {
@@ -55,13 +65,30 @@ aside {
   padding: 0 1rem;
 }
 
-article {
-  flex: 2;
-}
-
 aside {
   background-color: lightgreen;
-  flex: 1;
+}
+
+#aside-1 {
+  grid-area: aside1;
+}
+
+#aside-2 {
+  grid-area: aside2;
+}
+
+#aside-3 {
+  grid-area: aside3;
+  background-color: pink;
+}
+
+#article-1 {
+  grid-area: article1;
+}
+
+#article-2 {
+  grid-area: article2;
+  background-color: skyblue;
 }
 
 p {
@@ -69,11 +96,7 @@ p {
 }
 
 footer {
-  align-content: flex-end;
   background-color: yellow;
-  display: flex;
-  flex-flow: row-reverse;
-  justify-content: space-between;
 }
 
 #copyright {
@@ -82,9 +105,4 @@ footer {
 
 #logo {
   background-color: orange;
-}
-
-img {
-  display: block;
-  height: 200px;
 }
