@@ -81,9 +81,6 @@ li img{
 	ul {
 		grid-template-columns: 1fr;
 	}
-	h1 {
-		display: grid;
-	}
 }
 
 
