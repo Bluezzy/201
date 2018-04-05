@@ -1,1 +1,174 @@
-@import url("whitespace-reset.css")
+@import url("whitespace-reset.css");
+
+body {
+  display: grid;
+  grid-template-columns: ;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "."
+  "b"
+  "."
+  "nav";
+  grid-template-rows: 80px 2fr 60px 1fr;
+  background: url("images/bg_body.gif") repeat;
+}
+
+.logo {
+  grid-area: b;
+  align-self: top;
+  justify-self: center;
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+}
+
+nav {
+  grid-area: nav;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.links {
+  display: grid;
+  grid-gap: 67px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.links a {
+  font: normal 24px "Avenir", Helvetica, sans-serif;
+  margin: 0 auto;
+  color: #cbcbcb;
+}
+
+.links a:link {
+  text-decoration: none;
+}
+
+.links .active {
+  color: #6db9ff;
+}
+
+main {
+  margin: 80px auto;
+  width: 1160px;
+  text-align: center;
+}
+
+article {
+  margin: 0 80px 50px 80px;
+}
+
+h1 {
+  font: bold 36px "Avenir", sans-serif;
+  text-align: center;
+}
+
+h1::before, h1::after {
+  display: inline-block;
+  content: "\2022";
+  padding: 20px;
+  font-size: 24px;
+}
+
+h2 {
+  font: bold 24px "Avenir", sans-serif;
+  color: #405baf;
+  margin-bottom: 30px;
+}
+
+p {
+  font: normal 21px "Avenir", sans-serif;
+}
+
+footer {
+  background-color: #e7e7e7;
+  width: 100%;
+  text-align: center;
+  padding: 70px 0 70px 0;
+}
+
+footer p {
+  color: #b2b2b2;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  display: inline-block;
+  padding: 0 60px;
+}
+
+footer li a {
+  background:
+  transparent
+  url("images/icons_social-media.png") 0 0 no-repeat;
+  display: block;
+  height: 46px;
+  overflow: hidden;
+  text-indent: -100000px;
+  width: 46px;
+}
+
+footer li a.twitter {
+  background-position: 0 0;
+}
+
+footer li a.facebook {
+  background-position: 0 -46px;
+}
+
+footer li a.email {
+  background-position: 0 -92px;
+}
+
+footer li a.instagram {
+  background-position: 0 -138px;
+}
+
+.projects {
+  margin: 50px 0 100px 0;
+}
+
+.projects p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+p.team {
+  width: 80%;
+  margin: 0 auto;
+}
+
+ul.team {
+  margin: 120px auto;
+}
+
+.team li {
+  display: inline-block;
+}
+
+.team img {
+  margin: 0 30px 25px 30px;
+}
+
+.team a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+span {
+  display: block;
+  text-decoration: none;
+  font: normal 24px "Avenir", Helvetica, sans-serif;
+  color: #405baf;
+}
