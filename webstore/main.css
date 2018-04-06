@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  background: yellow;
+}
+
+header {
+  margin: 0px 35px 40px 35px;
+  padding: 20px 30px;
+  background: dodgerblue;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font: 24px Helvetica;
+  color: white;
+}
+
+main {
+  display: grid;
+  margin: 0px 35px;
+  padding: 20px 30px;
+  background: #ececec;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+  "h2 h2 h2 h2"
+  "aurelia chlorelligerum somneborni polycaryum"
+  "woodruff ugandae . .";
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+h2 {
+  grid-area: h2;
+}
+
+.aurelia { grid-area: aurelia; }
+
+.chlorelligerum { grid-area: chlorelligerum; }
+
+.somneborni { grid-area: somneborni; }
+
+.polycaryum { grid-area: polycaryum; }
+
+.woodruff { grid-area: woodruff; }
+
+.polycarium { grid-area: polycarium; }
+
+label {
+  cursor: pointer;
+  background: white;
+  width: 300px;
+}
+
+input:checked + figure:before {
+  background: black;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  content:"";
+  opacity: 0.5;
+}
