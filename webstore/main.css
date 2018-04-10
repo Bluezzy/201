@@ -1,12 +1,18 @@
 body {
-  margin: 0;
-  background: yellow;
+  margin: 0 auto;
+  width: 900px;
+  background: #fed431;
 }
 
 header {
-  margin: 0px 35px 40px 35px;
-  padding: 20px 30px;
-  background: dodgerblue;
+  box-sizing: border-box;
+  height: 100px;
+  width: 900px;
+  min-width: 800px;
+  margin: 0px;
+  margin-bottom: 40px;
+  padding: 30px 24px;
+  background: #167EBF;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   font: 24px Helvetica;
@@ -14,12 +20,18 @@ header {
 }
 
 main {
+  height: 620px;
+  width: 900px;
+  box-sizing: border-box;
+  min-width: 800px;
   display: grid;
-  margin: 0px 35px;
-  padding: 20px 30px;
+  margin: 0px;
+  padding: 0px 20px;
   background: #ececec;
-  grid-gap: 20px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 64px 235px 235px;
   grid-template-areas:
   "h2 h2 h2 h2"
   "aurelia chlorelligerum somneborni polycaryum"
@@ -30,8 +42,17 @@ input[type="checkbox"] {
   display: none;
 }
 
+h1 {
+  margin: 0;
+  font: bold 36px Helvetica, sans-serif;
+}
+
 h2 {
+  margin: 0;
+  padding: 28px 0px 8px 0px;
   grid-area: h2;
+  font: bold 28px Helvetica, sans-serif;
+  height: 28px;
 }
 
 .aurelia { grid-area: aurelia; }
@@ -47,18 +68,59 @@ h2 {
 .polycarium { grid-area: polycarium; }
 
 label {
+  box-sizing: border-box;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  height: 235px;
+  width: 200px;
   cursor: pointer;
   background: white;
-  width: 300px;
 }
 
 input:checked + figure:before {
   background: black;
   position: fixed;
   top: 0;
-  right: 0;
   left: 0;
+  right: 0;
   bottom: 0;
   content:"";
   opacity: 0.5;
+  z-index: 1;
 }
+
+input:checked + figure img {
+  position: fixed;
+  z-index: 2;
+  top: 100px;
+  left: 580px;
+  object-fit: contain;
+  width: 400px;
+  height: auto;
+  opacity: 1;
+}
+
+input:checked + figure figcaption {
+  position: relative;
+  bottom: -148px;
+}
+
+figure {
+  margin: 0;
+  height: 210px;
+  display: grid;
+  justify-items: start;
+}
+
+img {
+  display: grid;
+  justify-self: center;
+  height: 140px;
+}
+
+figcaption h3, figcaption p {
+  margin: 0;
+  padding-left: 18px;
+  margin-top: 8px;
+}
+
