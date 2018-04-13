@@ -1,0 +1,467 @@
+ /* -------------- General rules --------------- */
+
+@import url("reset.css");
+
+* {
+  box-sizing: border-box;
+  font-weight: 400;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  padding: 12px 28px;
+  background-color: #0e7e12;
+  text-decoration: none;
+  color: white;
+  text-transform: initial;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #095F0B;
+  text-decoration: none;
+}
+
+
+ /* -------------- Navigation --------------- */
+
+nav {
+  background: white;
+  display: block;
+  width: 100%;
+  position: fixed;
+  border-top: 10px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+  z-index: 2;
+}
+
+.nav-anchors {
+  font-size: 13px;
+  line-height: 44px;
+}
+
+ul {
+  text-align: center;
+}
+li {
+  display: inline-block;
+  padding: 0px 27px;
+}
+
+a {
+  text-decoration: none;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* -------------- Header --------------- */
+
+header {
+  top: 50px;
+  position: relative;
+  background: url("images/front.jpg") center no-repeat;
+  height: 428px;
+  z-index: 1;
+}
+
+header img {
+  display: block;
+  position: relative;
+  top: 150px;
+  margin: 0 auto;
+}
+
+header h1 {
+  position: relative;
+  top: 174px;
+  font-weight: 400;
+  text-align: center;
+  font-size: 72px;
+  line-height: 72px;
+  color: white;
+}
+
+header h2 {
+  position: relative;
+  top: 190px;
+  font-weight: 400;
+  font-size: 31px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* -------------- Main section general rules --------------- */
+
+main {
+  position: relative;
+  top: 50px;
+  margin: 0px 30px;
+}
+
+main section {
+  padding: 70px 0px;
+  border-bottom: 1px solid #f5f5f5;
+  text-align: center;
+}
+
+main section h1 {
+  font: normal 48px/48px 'Open Sans', Arial, sans-serif;
+  font-weight: lighter;
+  color: #444444;
+}
+
+
+/* -------------- Tickets section --------------- */
+
+.tickets p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.tickets h1 {
+  margin-bottom: 45px;
+}
+
+
+/* -------------- Speakers section --------------- */
+
+.speakers h1 {
+  margin-bottom: 40px;
+}
+
+.speakers {
+  max-width: 872px;
+  margin: 0 auto;
+}
+
+.speakers .wrapper * {
+  margin: 0;
+  padding: 0;
+}
+
+.speakers .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 282px);
+  grid-template-rows: 380px;
+  grid-template-areas:
+  "martinus fischer shiota"
+  "gulotta caswell furfero"
+  "goncalves park dias"
+  "kobos paul mann";
+  grid-gap: 14px;
+}
+
+.martinus {grid-area: martinus;}
+.fischer {grid-area: fischer;}
+.shiota {grid-area: shiota;}
+.gulotta {grid-area: gulotta;}
+.caswell {grid-area: caswell;}
+.furfero {grid-area: furfero;}
+.goncalves {grid-area: goncalves;}
+.park {grid-area: park;}
+.dias {grid-area: dias;}
+.kobos {grid-area: kobos;}
+.paul {grid-area: paul;}
+.mann {grid-area: mann;}
+
+.speakers .wrapper li {
+  width: 282px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.speakers .wrapper li figure figcaption {
+  height: 150px;
+}
+
+.speakers .wrapper h2 {
+  position: relative;
+  top: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #008000;
+}
+
+.speakers .wrapper p {
+  position: relative;
+  top: 40px;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0px 1px;
+}
+
+
+/* -------------- Schedule section --------------- */
+
+table {
+  margin: 40px auto 0px auto;
+  max-width: 960px;
+}
+
+table td {
+  padding: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+table td h2 {
+  font-size: 24px;
+  color: #444444;
+}
+
+table td h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #008000;
+}
+
+table img {
+  width: 128px;
+  height: auto;
+}
+
+
+/* -------------- Location and Call For Papers sections --------------- */
+
+.location, .call_for_papers {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.location p, .call_for_papers p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  color: #444444;
+  text-align: left;
+  margin-bottom: 22px;
+}
+
+.location h1 {
+  margin-bottom: 22px;
+}
+
+.location h2 {
+  text-align: left;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  color: #444444;
+}
+
+.call_for_papers .button {
+  margin-top: 0;
+}
+
+.call_for_papers .button_wrapper {
+  text-align: left;
+}
+
+.call_for_papers p:nth-of-type(5) {
+  margin-bottom: 12px;
+}
+
+
+/* -------------- Sponsors --------------- */
+
+.sponsors {
+  max-width: 960px;
+  margin: 20px auto;
+}
+
+.sponsors dl {
+  text-align: left;
+}
+
+.sponsors dl dd {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.sponsors .platinum dd:nth-of-type(3) {
+  margin-right: 0px;
+}
+
+.sponsors .gold  {
+  max-width: 700px;
+}
+
+.sponsors .silver dd {
+  width: 220px;
+}
+
+.sponsors .silver dd img {
+  width: 100%;
+  height: auto;
+}
+
+.sponsors .support dd {
+  width: 180px;
+}
+
+.sponsors .support dd img {
+  width: 100%;
+  height: auto;
+}
+
+.sponsors dt {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+footer {
+  margin-top: 50px;
+  height: 340px;
+  width: 100%;
+  background: url("images/people.jpg") no-repeat;
+  background-size: cover;
+}
+
+footer h1 {
+  text-align: center;
+  padding: 40px 0px;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 100;
+  color: white;
+}
+
+footer .team {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  height: 188px;
+  padding-left: 10px;
+}
+
+footer .team * {
+  width: 960px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+footer .team h2 {
+  font-weight: 600;
+  font-size: 31px;
+  color: white;
+  line-height: 31px;
+  padding: 20px 0px 8px 0px;
+}
+
+footer .team p {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 300;
+  color: white;
+}
+
+footer .team p:nth-of-type(1) {
+  margin-bottom: 26px;
+}
+
+footer .team p:nth-of-type(2) {
+  margin-bottom: 12px;
+}
+
+footer .team p:nth-of-type(2) a {
+  text-transform: initial;
+  color: #008000;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+footer .team .button {
+  width: initial;
+  text-transform: initial;
+}
+/* -------------- Responsive Breakpoints --------------- */
+
+@media (max-width: 960px) {
+  .speakers .wrapper {
+    grid-template-columns: repeat(2, 282px);
+    grid-template-areas:
+    "martinus fischer"
+    "shiota gulotta"
+    "caswell furfero"
+    "goncalves park"
+    "dias kobos"
+    "paul mann";
+    justify-content: center;
+  }
+}
+
+@media (max-width: 665px) {
+  nav { display: none; }
+
+  header { 
+    top: 0px;
+    height: 300px; }
+
+  header img, header h1 {
+    top: 90px;
+  }
+
+  header h1 {
+    font-size: 38px;
+  }
+
+  header h2 {
+    font-size: 18px;
+    top: 80px;
+  }
+
+  main {
+    top: 0px;
+  }
+
+  .speakers .wrapper {
+    grid-template-columns: 282px;
+    grid-template-areas:
+    "martinus" "fischer" "shiota" "gulotta" "caswell" "furfero" "goncalves" "park" "dias" "kobos" "paul" "mann";
+    align-items: center;
+  }
+
+    table tr {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  tr td:nth-child(1) {     /* Time cell */
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    display: grid;
+    align-items: end;
+    justify-items: end;
+  }
+  tr td:nth-child(2) {     /* Data cell */
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    border: none;
+  }
+  tr td:nth-child(3) {     /* Picture cell */
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+}
+
